@@ -1,0 +1,29 @@
+{
+  "name": "gif-search-app",
+  "version": "1.0.0",
+  "description": "search for gifs using giphy api",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinhubbard/GIPHY-API-APP.git"
+  },
+  "keywords": [
+    "giphy",
+    "api",
+    "bootstrap",
+    "jquery",
+    "ajax"
+  ],
+  "author": "Kevin Hubbard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinhubbard/GIPHY-API-APP/issues"
+  },
+  "homepage": "https://github.com/kevinhubbard/GIPHY-API-APP#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

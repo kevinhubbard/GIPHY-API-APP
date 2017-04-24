@@ -1,14 +1,11 @@
 $(document).ready(function() {
 	var animals = ['dog', 'cat', 'pig', 'hen', 'lizard', 'bat', 'eagle', 'fish', 'tiger', 'funny+cat'];
 		
-		var num = 15;
-		console.log(typeof(num));
-		num = num.toString();
-		console.log(typeof(num));
+
 
 	for (var i = 0; i<animals.length; i++){
 		var animalList = $('#animalList');
-		animalList.append('<button id="'+animals[i]+'" class="button">'+ animals[i] +'</button>'+' ');
+		animalList.append('<button id="'+animals[i]+'" class="button btn btn-primary">'+ animals[i] +'</button>'+' ');
 	
 	}
 	$("input").keyup(function(event){
@@ -20,13 +17,20 @@ $(document).ready(function() {
 	$(document).on('click', '#add', function() {
 
 		var test = $('input').val().trim();
-		console.log(typeof(input));
-		input = test.replace(/\s/g, '+');
 
-		animalList.append('<button id="'+input+'" class="button">'+input+'</button>' + ' ');
+		if (test === ''){
+			alert('Enter a gif to search.');
+		} else{
+			console.log(typeof(input));
+			var input = test.replace(/\s/g, '+');
 
-		/* clear input field*/
-		$('input').val('');
+			animalList.append('<button id="'+input+'" class="button btn btn-primary">'+input+'</button>' + ' ');
+
+			/* clear input field*/
+			$('input').val('');
+
+		}
+
 	});
 
 	$(document).on('click', '.button', function() {
@@ -50,9 +54,11 @@ $(document).ready(function() {
 			
 			for (var i = 0; i < results.length; i++) {
 				var rating = results[i].rating;
+				var url = results[i].url;
 				var gif = $('<div>')
 				var img = $('<img>');
 				var p =  $('<p>').text('Rating: ' + rating);
+			
 				img.attr({
 					class: 'gif',
 					src: results[i].images.fixed_height.url
@@ -66,8 +72,7 @@ $(document).ready(function() {
 				$('#gifs').append(gif);
 				
 			}
-			// img.attr('src', Array[0].);
-			// $(document).append(gifs);
+
 		});
 
 		
