@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var animals = ['dog', 'cat', 'pig', 'hen', 'lizard', 'bat', 'eagle', 'fish', 'tiger', 'funny+cat'];
+	var animals = ['cheech+chong', 'dog', 'cat', 'pig', 'hen', 'lizard', 'bat', 'eagle', 'fish', 'tiger', 'funny+cat'];
 		
 
 
