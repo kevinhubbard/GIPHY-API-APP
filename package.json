@@ -2,7 +2,7 @@
   "name": "gif-search-app",
   "version": "1.0.0",
   "description": "search for gifs using giphy api",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/kevinhubbard/GIPHY-API-APP#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1"
   }
 }

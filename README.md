@@ -1,2 +1,12 @@
 # GIPHY-API-APP
-displays gifs according to interest
+
+[Giphy Search](https://giphy-search-kfh.herokuapp.com/)
+
+Users can easily search for gifs by entering a keyword.
+
+**Technologies used**
+* Bootstrap
+* AJAX
+ * Giphy API
+* Express
+* JavaScript
